@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
                 val intent_detail = Intent(this, DetailActivity::class.java)
                     .apply {
                         putExtra(DetailActivity.cons_TitleNews, headlinenews.title)
+                        putExtra(DetailActivity.cont_KontenNews, headlinenews.desc)
                         putExtra(DetailActivity.cont_PhotoNews, headlinenews.toString())
                     }
 
